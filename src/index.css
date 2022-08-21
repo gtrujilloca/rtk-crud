@@ -1,0 +1,25 @@
+:root {
+  color-scheme: light dark;
+  --color: rgba(255, 255, 255, 0.87);
+  --bg: #242424;
+
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--color);
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color: #211f1f91;
+    --bg: #ffffff;
+  }
+}
