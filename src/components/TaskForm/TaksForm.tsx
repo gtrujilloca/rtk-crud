@@ -51,10 +51,10 @@ export const TaksForm = () => {
       onSubmit={handleSubmit}
       className='bg-zinc-800 max-w-sm p-4 '
     >
-      <label htmlFor="title" className='block text-xs font-bold mb-1'>
+      <label htmlFor="title" className='block text-xs font-bold text-left mb-2'>
         Title
         <input
-          className='w-full p-2 rounded-md bg-zinc-600 mb-2'
+          className='w-full p-2 rounded-md bg-zinc-600 mb-2 mt-1'
           type="text"
           name='title'
           id='title'
@@ -64,10 +64,10 @@ export const TaksForm = () => {
         />
       </label>
 
-      <label htmlFor="description" className='block text-xs font-bold mb-2'>
+      <label htmlFor="description" className='block text-xs font-bold mb-4 text-left'>
         Description
         <textarea
-          className='w-full p-2 rounded-md bg-zinc-600 mb-2'
+          className='w-full p-2 rounded-md bg-zinc-600 mt-2'
           name="description"
           id='description'
           placeholder='Description'
@@ -76,7 +76,7 @@ export const TaksForm = () => {
         ></textarea>
       </label>
 
-      <button className='bg-indigo-600 px-2 py-1'>
+      <button className='bg-indigo-600 px-2 py-1 w-full'>
         Save
       </button>
     </form>
